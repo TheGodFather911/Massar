@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MassarService</title>
+    <!-- Tell the browser to be responsive to screen width -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="manifest" href="/moutamadris/ScriptsIntegration/assets/img/favicon/manifest.json">
+    <link href="/moutamadris/Content/css-rtl?v=YTmi4is9jJrwcPQ4C2dCWYe7gCVNAhT2-ywwwWXSmr41" rel="stylesheet">
+
+    <link href="/moutamadris/Content/cssEleve?v=EBUBY7l-w6tpd9VD5u2_XjqUQ16KJi2XcgFFLZfdeEQ1" rel="stylesheet">
+
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/moutamadris/ScriptsIntegration/assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" href="/moutamadris/ScriptsIntegration/assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/moutamadris/Content/plugins/notifications/pnotify.custom.min.css">
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
+        var lang = 'ar';
+        var culture = 'ar-MA';
+    </script>
+
+
+
+
+
+    <script src="/moutamadris/bundles/jquery?v=N2YlHnRI7it2_JoqUZTYWxPtx-s61zIGkk78Q0eabPM1"></script>
+
+
+    <script src="/moutamadris/bundles/jqueryExt?v=4Otz-JY_3M4anvKos-rw_4AlWArcCJZZujhxbTxYLew1"></script>
+
+    <script src="/moutamadris/bundles/bootstrap?v=7k-mK_Lw6GRA4MkvIrgrWipUHc3KUDohIwN2DDpspCI1"></script>
+
+    <script src="/moutamadris/bundles/plugins?v=dthiaoVfSA2VqQNj8jd6HxJMh19sMPKGmDYGPIlVaZ41"></script>
+
+    <script src="https://openam.github.io/bootstrap-responsive-tabs/js/responsive-tabs.js"></script>
+
+<style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
+<body class="Layout">
+    <div class="global">
+        <div class="dashboardContent orangeNav">
+
+
+
+<div class="wrapperNav">
+    <span class="overlay"></span>
+    <div class="inner">
+        <a class="btnMenu" href="#"><span></span></a>
+
+        <nav class="navLinks mainNav">
+            <a class="closeMenu" href="#"><span></span></a>
+            <ul id="sidebar-menu">
+                            <li class="icon icon-home">
+                                    <a href="/moutamadris/General/Home" title="الرئيسية"><span>الرئيسية</span></a>
+                            </li>
+                            <li class="icon icon-book active hasSubMenu  ">
+                                <a href="/moutamadris/">
+                                    <span>التمدرس</span>
+                                </a>
+                                <div class="subMenu">
+                                    <a href="#" class="btn-back"></a>
+                                    <div class="subInner mCustomScrollbar _mCS_2 mCS-dir-rtl mCS_no_scrollbar"><div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="rtl">
+
+                                            <h2 class="title">التمدرس</h2>
+                                            <div class="subNav">
+                                                <ul>
+                                                        <li>
+                                                                <a href="/moutamadris/TuteurEleves/GetCalendierControls">
+                                                                    <span>المراقبة المستمرة</span>
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="/moutamadris/TuteurEleves/GetNotesEleve">
+                                                                    <span>تتبع النقط</span>
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="/moutamadris/TuteurEleves/GetAbsence">
+                                                                    <span>الغياب</span>
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="/moutamadris/TuteurEleves/GetCalendierExamens">
+                                                                    <span>جدولة الامتحانات</span>
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="/moutamadris/TuteurEleves/GetScolariteEleve">
+                                                                    <span>مساري الدراسي</span>
+                                                                </a>
+                                                        </li>
+                                                </ul>
+                                            </div>
+                                    </div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div></div>
+                                </div>
+                            </li>
+                            <li class="icon icon-resource">
+                                    <a href="https://soutiensco.men.gov.ma/Home/ListCours?niveau=3A31" target="_blank" title="الموارد الرقمية"><span>الموارد الرقمية</span></a>
+                            </li>
+                            <li class="icon icon-orientation  hasSubMenu  ">
+                                <a href="/moutamadris/">
+                                    <span>التوجيه</span>
+                                </a>
+                                <div class="subMenu">
+                                    <a href="#" class="btn-back"></a>
+                                    <div class="subInner mCustomScrollbar _mCS_3 mCS-dir-rtl"><div id="mCSB_3" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_3_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="rtl">
+
+                                                <h2 class="title" style="margin-left: -10px;">المرحلة الأولية</h2>
+                                                <div class="subNav">
+                                                    <ul>
+                                                            <li>
+                                                                    <a href="/moutamadris/DemandeOrientation/Index?Etape=1">
+                                                                        <span>اختياراتي الدراسية والتكوينية</span>
+                                                                    </a>
+                                                            </li>
+                                                            <li>
+                                                                    <a href="/moutamadris/AideOrientation/RenderOrientationFormulaireDomaine?Etape=1">
+                                                                        <span>أهدافي المهنية المستقبلية</span>
+                                                                    </a>
+                                                            </li>
+                                                            <li>
+                                                                    <a href="/moutamadris/AideOrientation/RenderOrientationFormulaire">
+                                                                        <span>ميولي المهنية (استمارة)</span>
+                                                                    </a>
+                                                            </li>
+                                                            <li>
+                                                                    <a href="/moutamadris/AideOrientation/RenderQuestionaireScolFormation">
+                                                                        <span>ميولي الدراسية (استمارة)</span>
+                                                                    </a>
+                                                            </li>
+                                                            <li>
+                                                                    <a href="/moutamadris/AideOrientation">
+                                                                        <span>انسجام اختياراتي وجانبياتي</span>
+                                                                    </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                                <br>
+                                                <h2 class="title" style="margin-left: -10px;">المرحلة النهائية</h2>
+                                                <div class="subNav">
+                                                    <ul>
+                                                            <li>
+                                                                    <a href="/moutamadris/DemandeOrientation/Index?Etape=2">
+                                                                        <span>اختياراتي الدراسية والتكوينية</span>
+                                                                    </a>
+                                                            </li>
+                                                            <li>
+                                                                    <a href="/moutamadris/AideOrientation/RenderOrientationFormulaireDomaine?Etape=2">
+                                                                        <span>أهدافي المهنية المستقبلية</span>
+                                                                    </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                                <br>
+                                                <h2 class="title" style="margin-left: -10px;">إدارة المقابلات</h2>
+                                                <div class="subNav">
+                                                    <ul>
+                                                            <li>
+                                                                    <a href="/moutamadris/DemandeEntretien">
+                                                                        <span>طلب مقابلة المستشار في التوجيه التربوي</span>
+                                                                    </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                                <br>
+                                    </div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div></div>
+                                </div>
+                            </li>
+                            <li class="icon icon-resource">
+                                    <a href="/moutamadris/GestionRessources/VisualisationRessources/ActivitesClasse" title="الأنشطة الصفية "><span>الأنشطة الصفية </span></a>
+                            </li>
+                            <li class="icon icon-resource">
+                                    <a href="/moutamadris/DeclarationAccident/index" title="الحوادث المدرسية"><span>الحوادث المدرسية</span></a>
+                            </li>
+                            <li class="icon icon-orientation  hasSubMenu  ">
+                                <a href="/moutamadris/">
+                                    <span>إعادة التوجيه</span>
+                                </a>
+                                <div class="subMenu">
+                                    <a href="#" class="btn-back"></a>
+                                    <div class="subInner mCustomScrollbar _mCS_4 mCS-dir-rtl mCS_no_scrollbar"><div id="mCSB_4" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_4_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="rtl">
+
+                                            <h2 class="title">إعادة التوجيه</h2>
+                                            <div class="subNav">
+                                                <ul>
+                                                        <li>
+                                                                <a href="/moutamadris/DemandeReOrientation/index">
+                                                                    <span>طلب إعادة التوجيه</span>
+                                                                </a>
+                                                        </li>
+                                                </ul>
+                                            </div>
+                                    </div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div></div>
+                                </div>
+                            </li>
+                            <li class="icon icon-support">
+                                    <a href="/moutamadris/Tadkik/index" title="تدقيق المعطيات"><span>تدقيق المعطيات</span></a>
+                            </li>
+                            <li class="icon icon-meeting">
+                                    <a href="https://www.men.gov.ma/" target="_blank" title="المساعدة"><span>المساعدة</span></a>
+                            </li>
+                            <li class="icon icon-cap">
+                                    <a href="/moutamadris/adss/index" title="مسابقات رياضية عن بعد"><span>مسابقات رياضية عن بعد</span></a>
+                            </li>
+                            <li class="icon icon-meeting">
+                                    <a href="https://www.men.gov.ma/" target="_blank" title="اسئلة و اجوبة"><span>اسئلة و اجوبة</span></a>
+                            </li>
+                            <li class="icon icon-resource  hasSubMenu  ">
+                                <a href="/moutamadris/">
+                                    <span>الرياضة المدرسية</span>
+                                </a>
+                                <div class="subMenu">
+                                    <a href="#" class="btn-back"></a>
+                                    <div class="subInner mCustomScrollbar _mCS_5 mCS-dir-rtl mCS_no_scrollbar"><div id="mCSB_5" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_5_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="rtl">
+
+                                            <h2 class="title">الرياضة المدرسية</h2>
+                                            <div class="subNav">
+                                                <ul>
+                                                        <li>
+                                                                <a href="https://sportscolairemassar.men.gov.ma/sport-scolaire/fr-FR/competitions/inscription" title="التسجيل في المسابقات"><span>التسجيل في المسابقات</span></a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="https://sportscolairemassar.men.gov.ma/sport-scolaire/fr-FR/affectations/inscription" title="التسجيل في لأنشطة"><span>التسجيل في لأنشطة</span></a>
+                                                        </li>
+                                                </ul>
+                                            </div>
+                                    </div><div id="mCSB_5_scrollbar_vertical" class="mCSB_scrollTools mCSB_5_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_5_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div></div>
+                                </div>
+                            </li>
+                            <li class="icon icon-resource  hasSubMenu  ">
+                                <a href="/moutamadris/">
+                                    <span>الأنشطة الموازية </span>
+                                </a>
+                                <div class="subMenu">
+                                    <a href="#" class="btn-back"></a>
+                                    <div class="subInner mCustomScrollbar _mCS_6 mCS-dir-rtl mCS_no_scrollbar"><div id="mCSB_6" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_6_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="rtl">
+
+                                            <h2 class="title">الأنشطة الموازية </h2>
+                                            <div class="subNav">
+                                                <ul>
+                                                        <li>
+                                                                <a href="/moutamadris/SportScolaire/ActiviteParaScoEleve">
+                                                                    <span>التسجيل في الأنشطة</span>
+                                                                </a>
+                                                        </li>
+                                                </ul>
+                                            </div>
+                                    </div><div id="mCSB_6_scrollbar_vertical" class="mCSB_scrollTools mCSB_6_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_6_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div></div>
+                                </div>
+                            </li>
+                            <li class="icon icon-meeting">
+                                    <a href="https://www.men.gov.ma/" target="_blank" title="علبة الأفكار"><span>علبة الأفكار</span></a>
+                            </li>
+            </ul>
+        </nav>
+        <nav class="navLinks userNav">
+            <ul>
+                <li class="icon icon-notif    hasSubMenu">
+                    <a href="#" title="Notifications"><span>اشعارات</span></a>
+                    <div class="subMenu">
+                        <a href="#" class="btn-back"></a>
+                        <div class="subInner mCustomScrollbar _mCS_7 mCS-dir-rtl mCS_no_scrollbar"><div id="mCSB_7" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_7_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="rtl">
+                            <h2 class="title">اشعارات</h2>
+                            <div class="notifNav">
+                            </div>
+                        </div><div id="mCSB_7_scrollbar_vertical" class="mCSB_scrollTools mCSB_7_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_7_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div></div>
+                    </div>
+                </li>
+                <li class="icon icon-info notif hasSubMenu">
+                    <a href="#" title="Nouveautés"><span>المستجدات</span></a>
+                    <div class="subMenu">
+                        <a href="#" class="btn-back"></a>
+                        <div class="subInner mCustomScrollbar _mCS_8 mCS-dir-rtl mCS_no_scrollbar"><div id="mCSB_8" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_8_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="rtl">
+                            <h2 class="title">المستجدات</h2>
+                            <div class="notifNav">
+                                <ul>
+                                    <li>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div><div id="mCSB_8_scrollbar_vertical" class="mCSB_scrollTools mCSB_8_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_8_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div></div>
+                    </div>
+                </li>
+                <li class="icon icon-contact hideMobile hasSubMenu">
+                    <a href="#" title="Contact"><span>الاتصال</span></a>
+                    <div class="subMenu">
+                        <a href="#" class="btn-back"></a>
+                        <div class="subInner mCustomScrollbar _mCS_9 mCS-dir-rtl mCS_no_scrollbar"><div id="mCSB_9" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_9_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="rtl">
+                            <h2 class="title">الاتصال</h2>
+                            <div class="notifNav">
+                                <ul>
+                                    <li>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div><div id="mCSB_9_scrollbar_vertical" class="mCSB_scrollTools mCSB_9_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_9_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div></div>
+                    </div>
+                </li>
+
+                <li class="userLink hasSubMenu">
+                    <a href="#" title="Profile">
+                        <div class="avatar">
+                                <img src="data:image;base64,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" alt="">
+                        </div>
+                        <div class="nameWrapper">
+                                <span> محمود علاء جعفر</span>
+                        </div>
+                    </a>
+                    <div class="subMenu">
+                        <a href="#" class=" btn-back"></a>
+                        <div class="subInner mCustomScrollbar _mCS_10 mCS-dir-rtl mCS_no_scrollbar"><div id="mCSB_10" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_10_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="rtl">
+                            <div class="userHeader">
+                                <div class="avatarEdit">
+                                    <div class="avatar">
+                                            <img src="data:image;base64,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" alt="" class="mCS_img_loaded">
+                                    </div>
+
+                                </div>
+                                <p class="userName"> محمود علاء جعفر</p>
+                                <div class="logout hideDesktop">
+                                    <a href="/moutamadris/Account/LogOff" class="cBtn">تسجيل الخروج</a>
+                                </div>
+                            </div>
+                            <div class="profilNav">
+                                <ul>
+                                        <li class="icon icon-user"><a href="/moutamadris/TuteurEleves/GetInfoEleve"><span>بياناتي الشخصية</span></a></li>
+                                        <li class="icon icon-email"><a href="http://www.taalim.ma" target="_blank"><span>علبة الرسائل</span></a></li>
+                                        <li class="icon icon-password"><a href="/moutamadris/Account/ChangePassword"><span>تغيير كلمة المرور</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="logout hideMobile">
+                                <a href="/moutamadris/Account/LogOff" class="cBtn">تسجيل الخروج</a>
+
+                            </div>
+                        </div><div id="mCSB_10_scrollbar_vertical" class="mCSB_scrollTools mCSB_10_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_10_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div></div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<script>
+     function UpadteNotif(id_notification) {
+                           $.ajax({
+                type: 'POST',
+                url: '/moutamadris/General/UpdateNotif',
+                dataType: 'json',
+                   data: { id: id_notification  },
+                   success:  {
+                }
+               });
+
+        }
+    $(document).ready(function () {
+
+    });
+
+</script>            <!-- Main content / start -->
+            <div class="mainContent">
+                    <nav class="navLang">
+                        <ul>
+                            <li>
+                                <a class="current" href="/moutamadris/General/SetCulture?culture=ar">
+                                    العربية
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="/moutamadris/General/SetCulture?culture=fr">
+                                    الفرنسية
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                        <a href="#" class="collabBtn" title="فضائي التعاوني"><span>فضائي التعاوني</span></a>
+                    <div class="welcomeWrapper">
+                        <div class="welcome">
+                                <h1 class="welcomeUser"> <span>مرحبا</span>  محمود علاء جعفر,</h1>
+                                                    </div>
+
+                    </div>
+
+
+                <div class="modals" id="loadingDiv"></div>
+                <div class="formStyle">
+
+
+
+
+
+<div class="widgetsContainer">
+    <div class="widget  ">
+        <div class="widgetHeader light">
+            <h2 class="title">
+                تتبع النقط
+            </h2>
+        </div>
+        <div class="widgetCont">
+            <div class="formStyle">
+                <div class="col-md-12">
+                    <div class="form-group col-md-3">
+                        <label>السنة الدراسية</label>
+                        <div class="selectbox">
+                            <select class="form-control" id="SelectedAnnee" name="SelectedAnnee"><option value="0"></option>
+<option value="2016">2016/2017</option>
+<option value="2017">2017/2018</option>
+<option value="2018">2018/2019</option>
+<option value="2019">2019/2020</option>
+<option value="2020">2020/2021</option>
+<option value="2021">2021/2022</option>
+<option value="2022">2022/2023</option>
+<option value="2023">2023/2024</option>
+<option selected="selected" value="2024">2024/2025</option>
+<option value="2025">2025/2026</option>
+</select>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label>الدورة</label>
+                        <div class="selectbox">
+                            <select class="form-control" data-val="true" data-val-number="The field SelectedSession must be a number." data-val-required="The SelectedSession field is required." id="SelectedSession" name="SelectedSession"><option selected="selected" value="0"></option>
+<option value="1">الدورة الأولى</option>
+<option value="2">الدورة الثانية</option>
+<option value="3">المعدل السنوي</option>
+</select>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 30px">
+                        <button class="cBtn btn-search" id="btnSearchNotes"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="widgetCont">
+            <div class="row">
+                <div class="col-md-12" id="ResultBulletin"><div class="widgetsContainer">
+    <div class="widget  ">
+        <div class="widgetHeader light">
+            <h2 class="title">
+                بيان النتائج الدراسية
+            </h2>
+        </div>
+        <div class="widgetCont">
+            <div class="row">
+                <div class="col-md-12">
+                    <dl>
+                        <dt class="col-md-2">المؤسسة</dt>
+                        <dd class="col-md-4">مدرسة كوستاف إيفيل الخاصة</dd>
+
+                        <dt class="col-md-2">المستوى</dt>
+                        <dd class="col-md-4">الثالثة إعدادي مسار دولي</dd>
+                    </dl>
+                </div>
+
+                <div class="col-md-12">
+                    <dl>
+                        <dt class="col-md-2">Classe</dt>
+                        <dd class="col-md-4">3APIC-1</dd>
+
+                        <dt class="col-md-2">عدد التلاميذ</dt>
+                        <dd class="col-md-4">21</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="nav-tabs-custom" style="margin-top: 15px;">
+                <ul class="nav responsive nav-tabs">
+                        <li class=""><a href="#tab_cc" data-toggle="tab" aria-expanded="false">نقط المراقبة المستمرة</a></li>
+                    <li class="active"><a href="#tab_notes_exam" data-toggle="tab" aria-expanded="true">بيان النتائج الدراسية</a></li>
+                    <li><a href="#tab_chart" data-toggle="tab">بيان النتائج الدراسية</a></li>
+                </ul>
+
+                <div class="tab-content responsive">
+
+                        <div class="tab-pane" id="tab_cc">
+                            <div class="row">
+                                <div class="col-md-12" style="margin-top: 15px;">
+                                    <table class="table table-bordered grid-table">
+                                        <thead>
+                                            <tr>
+                                                <th>المادة</th>
+                                                <th>الفرض الأول</th>
+                                                <th>الفرض الثاني</th>
+                                                <th>الفرض الثالث</th>
+                                                <th>الفرض الرابع</th>
+                                                <th>الأنشطة المندمجة</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr style="background:#fbfbfb;">
+                                                            <td rowspan="1" style="background:#fbfbfb;">الاجتماعيات</td>
+
+
+
+                                                            <td>
+<span>16</span>                                                            </td>
+                                                            <td>
+<span>16</span>                                                            </td>
+                                                            <td>
+                                                            </td>
+                                                            <td>
+<span>18</span>                                                            </td>
+                                                            <td>
+                                                            </td>
+
+                                                    </tr>
+                                                    <tr style="background:#fbfbfb;">
+                                                            <td rowspan="1" style="background:#fbfbfb;">التربية الإسلامية</td>
+
+
+
+                                                            <td>
+<span>14,75</span>                                                            </td>
+                                                            <td>
+<span>17</span>                                                            </td>
+                                                            <td>
+                                                            </td>
+                                                            <td>
+<span>18</span>                                                            </td>
+                                                            <td>
+                                                            </td>
+
+                                                    </tr>
+                                                    <tr style="background:#fbfbfb;">
+                                                            <td rowspan="1" style="background:#fbfbfb;">التربية البدنية</td>
+
+
+
+                                                            <td>
+<span>20</span>                                                            </td>
+                                                            <td>
+<span>20</span>                                                            </td>
+                                                            <td>
+<span>20</span>                                                            </td>
+                                                            <td>
+                                                            </td>
+                                                            <td>
+                                                            </td>
+
+                                                    </tr>
+                                                    <tr style="background:#fbfbfb;">
+                                                            <td rowspan="1" style="background:#fbfbfb;">الرياضيات</td>
+
+
+
+                                                            <td>
+<span>16</span>                                                            </td>
+                                                            <td>
+<span>15</span>                                                            </td>
+                                                            <td>
+<span>15</span>                                                            </td>
+                                                            <td>
+                                                            </td>
+                                                            <td>
+                                                            </td>
+
+                                                    </tr>
+                                                    <tr style="background:#fbfbfb;">
+                                                            <td rowspan="1" style="background:#fbfbfb;">الفيزياء والكيمياء</td>
+
+
+
+                                                            <td>
+<span>14,5</span>                                                            </td>
+                                                            <td>
+<span>15</span>                                                            </td>
+                                                            <td>
+<span>14,5</span>                                                            </td>
+                                                            <td>
+<span>20</span>                                                            </td>
+                                                            <td>
+                                                            </td>
+
+                                                    </tr>
+                                                    <tr style="background:#fbfbfb;">
+                                                            <td rowspan="1" style="background:#fbfbfb;">اللغة الإنجليزية</td>
+
+
+
+                                                            <td>
+<span>17</span>                                                            </td>
+                                                            <td>
+<span>15,5</span>                                                            </td>
+                                                            <td>
+                                                            </td>
+                                                            <td>
+<span>20</span>                                                            </td>
+                                                            <td>
+                                                            </td>
+
+                                                    </tr>
+                                                    <tr style="background:#fbfbfb;">
+                                                            <td rowspan="1" style="background:#fbfbfb;">اللغة العربية</td>
+
+
+
+                                                            <td>
+<span>17,5</span>                                                            </td>
+                                                            <td>
+<span>18</span>                                                            </td>
+                                                            <td>
+                                                            </td>
+                                                            <td>
+<span>18,5</span>                                                            </td>
+                                                            <td>
+                                                            </td>
+
+                                                    </tr>
+                                                    <tr style="background:#fbfbfb;">
+                                                            <td rowspan="1" style="background:#fbfbfb;">اللغة الفرنسية</td>
+
+
+
+                                                            <td>
+<span>19,35</span>                                                            </td>
+                                                            <td>
+<span>18,25</span>                                                            </td>
+                                                            <td>
+<span>18,5</span>                                                            </td>
+                                                            <td>
+<span>18</span>                                                            </td>
+                                                            <td>
+<span>18</span>                                                            </td>
+
+                                                    </tr>
+                                                    <tr style="background:#fbfbfb;">
+                                                            <td rowspan="1" style="background:#fbfbfb;">المعلوميات</td>
+
+
+
+                                                            <td>
+<span>20</span>                                                            </td>
+                                                            <td>
+<span>20</span>                                                            </td>
+                                                            <td>
+<span>20</span>                                                            </td>
+                                                            <td>
+<span>20</span>                                                            </td>
+                                                            <td>
+                                                            </td>
+
+                                                    </tr>
+                                                    <tr style="background:#fbfbfb;">
+                                                            <td rowspan="1" style="background:#fbfbfb;">علوم الحياة والأرض</td>
+
+
+
+                                                            <td>
+<span>14,5</span>                                                            </td>
+                                                            <td>
+<span>17</span>                                                            </td>
+                                                            <td>
+                                                            </td>
+                                                            <td>
+<span>18</span>                                                            </td>
+                                                            <td>
+                                                            </td>
+
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="tab-pane active" id="tab_notes_exam">
+                        <div class="row">
+                            <div class="col-md-12" style="margin-top: 15px;">
+                                <table class="table table-bordered grid-table">
+                                    <thead>
+                                        <tr>
+                                            <th>المادة</th>
+                                            <th>نقط المراقبة المستمرة</th>
+                                            <th>المعامل</th>
+                                            <th>أعلى نقطة</th>
+                                            <th>معدل القسم</th>
+                                            <th>أقل نقطة</th>
+                                            <th>نقط الامتحان</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                                <tr style="background:#fbfbfb;">
+                                                        <td rowspan="1" style="background:#fbfbfb;">الاجتماعيات</td>
+                                                                                                        <td>16,67</td>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>17,5</td>
+
+                                                </tr>
+                                                <tr style="background:#fbfbfb;">
+                                                        <td rowspan="1" style="background:#fbfbfb;">التربية الإسلامية</td>
+                                                                                                        <td>16,58</td>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>12,5</td>
+
+                                                </tr>
+                                                <tr style="background:#fbfbfb;">
+                                                        <td rowspan="1" style="background:#fbfbfb;">التربية البدنية</td>
+                                                                                                        <td>20</td>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+
+                                                </tr>
+                                                <tr style="background:#fbfbfb;">
+                                                        <td rowspan="1" style="background:#fbfbfb;">الرياضيات</td>
+                                                                                                        <td>15,33</td>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>18,75</td>
+
+                                                </tr>
+                                                <tr style="background:#fbfbfb;">
+                                                        <td rowspan="1" style="background:#fbfbfb;">الفيزياء والكيمياء</td>
+                                                                                                        <td>16</td>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>19,5</td>
+
+                                                </tr>
+                                                <tr style="background:#fbfbfb;">
+                                                        <td rowspan="1" style="background:#fbfbfb;">اللغة الإنجليزية</td>
+                                                                                                        <td>17,5</td>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+
+                                                </tr>
+                                                <tr style="background:#fbfbfb;">
+                                                        <td rowspan="1" style="background:#fbfbfb;">اللغة العربية</td>
+                                                                                                        <td>17,94</td>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>19</td>
+
+                                                </tr>
+                                                <tr style="background:#fbfbfb;">
+                                                        <td rowspan="1" style="background:#fbfbfb;">اللغة الفرنسية</td>
+                                                                                                        <td>18,42</td>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>20</td>
+
+                                                </tr>
+                                                <tr style="background:#fbfbfb;">
+                                                        <td rowspan="1" style="background:#fbfbfb;">المعلوميات</td>
+                                                                                                        <td>20</td>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+
+                                                </tr>
+                                                <tr style="background:#fbfbfb;">
+                                                        <td rowspan="1" style="background:#fbfbfb;">علوم الحياة والأرض</td>
+                                                                                                        <td>16,31</td>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>11,5</td>
+
+                                                </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row" style="font-size: 17px;">
+                            <div class="col-md-12" style="border-top: 1px solid #f3f3f3;">
+                                <label style="margin-right:40%;width:100px;padding: 3px;">معدل الدورة</label>
+                                <span style="width:50px">17,48</span>
+                            </div>
+                            <div class="col-md-12" style="border-top: 1px solid #f3f3f3;">
+                                <label style="margin-right:40%;width:100px;padding: 3px;">معدل الإمتحان</label>
+                                <span style="width:50px">18,01</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab_chart">
+                        <div class="row">
+                            <div style="width:800px;">
+                                <canvas id="chart" style="display: block; height: 0px; width: 0px;" height="0" width="0" class="chartjs-render-monitor"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/moutamadris/Scripts/ChartJs2.7.1/Chart.js"></script>
+<script src="/moutamadris/Scripts/NotesSubjectsChart.js"></script>
+
+<script>
+    var fontSize = 12;
+</script>
+
+    <script>
+        fontSize = 14;
+    </script>
+
+<script>
+    $(document).ready(function () {
+        var chart = $("#chart").RadarChart({
+            subjects: JSON.parse('["الاجتماعيات","التربية الإسلامية","التربية البدنية","الرياضيات","الفيزياء والكيمياء","اللغة الإنجليزية","اللغة العربية","اللغة الفرنسية","المعلوميات","علوم الحياة والأرض"]'),
+            notes: JSON.parse('[16.67,16.58,20,15.33,16,17.5,17.94,18.42,20,16.31]'),
+            avgNotes: JSON.parse('[null,null,null,null,null,null,null,null,null,null]'),
+            max: 20,
+            avg: 10,
+            studentNoteLabel: 'نقط المراقبة المستمرة',
+            avgNoteLabel: 'معدل القسم',
+            fontSize: fontSize
+        });
+    })
+</script></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $("#btnSearchNotes").click(function () {
+        var annee = $("#SelectedAnnee").val();
+        var session = $("#SelectedSession").val();
+        $.ajax({
+            type: 'POST',
+            url: '/moutamadris/TuteurEleves/GetBulletins', // we are calling json method
+            data: { Annee: annee, IdSession: session },
+            success: function (resulat) {
+                $("#ResultBulletin").html(resulat);
+            }
+        });
+    });
+
+</script>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="Model_msg" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div id="Model_msg_Class" class="modal-success">
+                    <div class="modal-header">
+
+                        <button class="close" aria-label="Close" type="button" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                        <h4 id="Model_msg_Header_title" class="modal-title">Modal Primary</h4>
+                    </div>
+                </div>
+                <div class="modal-body modal-dialog-body">
+                    <p id="Model_msg_body"></p>
+                </div>
+                <div class="modal-footer">
+
+                    <button id="Model_msg_Btn" class="btn  btn-primary" data-dismiss="modal" type="button">إغلاق</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+
+
+
+
+
+            </div>
+                <div class="collabSpace sticky">
+                    <div class="overlay"></div>
+                    <div class="innerCollabSpace">
+                        <a href="#" class="close" id="closeEspace" title="Fermer">إغلاق</a>
+                        <h2 class="title">فضائي التعاوني</h2>
+                        <div class="collabReactions">
+                            <div class="search">
+
+                            </div>
+                            <div class="reactions mCustomScrollbar _mCS_1 mCS-dir-rtl mCS_no_scrollbar"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="rtl">
+                                <div class="inner">
+                                    <img src="/moutamadris/images/ezgif.gif" id="imageLoad" style="text-align:center" class="mCS_img_loaded">
+                                    <ul id="divEspaceCollab"></ul>
+                                </div>
+                            </div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+
+    <script src="/moutamadris/bundles/globalize?v=kaI9ul8DpL3yGvqCJ4oJvyrOSlGeXJMhmXvcEiuOJWc1"></script>
+
+
+
+
+
+
+    <!-- Add by ahamdaoui -->
+    <!-- 1. Config du composant datepicker -->
+    <!-- 2. Resolution du PB de validation des champs de types decimal et date -->
+    <script type="text/javascript">
+
+        function OpenEspaceCollaboratifDiv()
+    {
+
+
+               $('#imageLoad').show();
+            $('#imageLoad').parent().css("text-align", "center");
+            $('#divEspaceCollab').hide();
+
+            $.ajax({
+                type: 'POST',
+                url: '/moutamadris/General/GetEspaceCollaboratif', // we are calling json method
+                success: function (resulat) {
+                    $("#divEspaceCollab").html(resulat);
+                    $('#imageLoad').hide();
+                    $('#divEspaceCollab').show();
+                    $('#divEspaceCollab').parent().removeAttr("style");
+                }
+            });
+    }
+
+    $(document).ready(function () {
+
+
+        var espaceCollaboratiftokenExist = 'False';
+            var openEspaceCollaboratif= 'False';
+
+
+        if (espaceCollaboratiftokenExist == 'True') {
+            $(".collabBtn").on("click", function (e) {
+
+                OpenEspaceCollaboratifDiv();
+            });
+
+
+            if (openEspaceCollaboratif == 'True') {
+                $('.innerCollabSpace').toggleClass('open');
+                $('body').toggleClass('openCollabSpace');
+                OpenEspaceCollaboratifDiv();
+            }
+        }
+        else {
+            $(".collabBtn").on("click", function (e) {
+                window.location.href = "https://login.microsoftonline.com/taalim.ma/oauth2/v2.0/authorize?client_id=6d02a224-581f-4788-a853-e3bf2461319a&response_type=code&redirect_uri=https://massarservice.men.gov.ma/moutamadris/General/AcquireTokenByAuthorizationCode&scope=openid&prompt=select_account";
+            });
+        }
+
+
+
+
+
+        $(".btnEleve").click(function () {
+            if (location.href.indexOf("/moutamadris/DemandeOrientation") >= 0) {
+                var codeEleve = $(this).data('code');
+                location.href = '/moutamadris/DemandeOrientation' + '?CodeEleve=' + codeEleve;
+            }
+            else if (location.href.indexOf("/moutamadris/General/Home") < 0) {
+                var codeEleve = $(this).data('code');
+                location.href = '/moutamadris/General/Home' + '?CodeEleve=' + codeEleve;
+            }
+        })
+
+
+
+            //if (lang == 'fr')
+            //    $("#loadingDiv").css('left', '230px');
+
+
+            $(document).on('hidden.bs.modal', function () {
+                $('body').css('padding-right', 0);
+            })
+
+            $(document).on('hidden.bs.shown', function () {
+                $('body').css('padding-right', 0);
+            })
+
+            $('.date .form-control').datepicker({
+                language: lang,
+                format: 'dd/mm/yyyy',
+                autoclose: true,
+                todayHighlight: true,
+                forceParse: false,
+
+            });
+        });
+
+
+
+        //affichage du waiter pour les ajax calls (loading...)
+        $(document).on({
+            ajaxSend: function (event, xhr, options) {
+                $('body').addClass('loading');
+            },
+            ajaxStop: function () {
+                $('body').removeClass('loading');
+            },
+            ajaxError: function (xhr, props) {
+                $('body').removeClass('loading');
+
+
+                if (props.status == 401 || props.status == 405) {
+
+                    location.reload();
+                    return;
+                }
+
+                if (props.status == 403) {
+                    $.errorMessageBox('Error', 'Accès non autorisé !!!!!!!');
+                    return;
+                }
+
+
+
+                if (props.status != 200) {
+                    $.errorMessageBox('Error', 'حدث خطأ أثناء تنفيذ هذه العملية  , يرجى إعادة المحاولة لاحقا');
+                }
+
+
+
+            }
+        });
+
+
+
+
+        var GlobalizeCulture = Globalize.culture(culture);
+
+        $.validator.methods.number = function (value, element) {
+            return this.optional(element) || jQuery.isNumeric(Globalize.parseFloat(value));
+        }
+
+        $.validator.methods.date = function (value, element) {
+
+            //This is not ideal but Chrome passes dates through in ISO1901 format regardless of locale
+            //and despite displaying in the specified format.
+            return this.optional(element)
+                || Globalize.parseDate(value, "dd/mm/yyyy", GlobalizeCulture)
+                || Globalize.parseDate(value, "yyyy-mm-dd");
+        }
+
+    </script>
+
+
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-80043752-7', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>
